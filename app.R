@@ -121,7 +121,7 @@ write_export_with_citation <- function(dat, file) {
   
   fwrite(as.data.table(note_row), file, col.names = FALSE)
   fwrite(as.data.table(blank_row), file, col.names = FALSE, append = TRUE)
-  fwrite(dat, file, append = TRUE)
+  fwrite(dat, file, append = TRUE, col.names = TRUE)
 }
 
 # -----------------------------------------------------------------------

@@ -45,13 +45,9 @@ The current workflow uses only positive concentration values, requires enough da
 
 ## Data Foundation
 
-The current app is based on a filtered synthesis of three publicly available occurrence resources:
+This database was compiled for Martin et al (2025) Environ. Sci. Technol. Lett. 2025, 12, 10, 1308-1313 (https://doi.org/10.1021/acs.estlett.5c00665). It is based on a filtered synthesis of three publicly available datasets: (1) the NORMAN EMPODAT database for chemical occurrence (accessed 18/03/2025), (2) the Umweltbundesamt Pharmaceuticals in the Environment database (PHARMS-UBA; accessed 19/12/2024), and (3) Wilkinson et al. (2022) Pharmaceutical Pollution of the World's Rivers database. Data were restricted to entries reported in mass per volume of water (e.g., µg/L) and relevant to surface water and wastewater matrices (for details of the filtering process, please refer to Martin et al. (2025)
 
-- NORMAN EMPODAT
-- PHARMS-UBA (German Environment Agency Pharmaceuticals in the Environment database)
-- Wilkinson et al. (2022) global river pharmaceutical dataset
-
-To improve comparability, records were filtered to water-based mass-per-volume measurements and matrices relevant to surface water and wastewater exposure scenarios. In the app, the processed datasets are stored locally as:
+In the app, the processed datasets are stored locally as:
 
 - `env_data.rds`
 - `compound_key.rds`
