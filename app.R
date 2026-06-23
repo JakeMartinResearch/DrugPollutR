@@ -128,7 +128,7 @@ write_export_with_citation <- function(dat, file) {
 # UI
 # -----------------------------------------------------------------------
 ui <- navbarPage(
-  title = "PollutionScopeR",
+  title = "DrugPollutR",
   theme = bs_theme(version = 5, bootswatch = "flatly"),
   
   tabPanel(

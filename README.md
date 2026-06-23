@@ -1,18 +1,18 @@
-# PollutionScopeR
+# DrugPollutR
 
-PollutionScopeR is an R Shiny application for exploring aquatic environmental occurrence data and using those data to build environmentally grounded dose series for ecotoxicology experiments.
+DrugPollutR is an R Shiny application for exploring aquatic environmental occurrence data and using those data to build environmentally grounded dose series for ecotoxicology experiments.
 
-Hosted app: [https://jakemartinresearch.shinyapps.io/PollutionScopeR/](https://jakemartinresearch.shinyapps.io/PollutionScopeR/)
+Hosted app: [https://jakemartinresearch.shinyapps.io/DrugPollutR/](https://jakemartinresearch.shinyapps.io/DrugPollutR/)
 
 ## Background
 
 Pharmaceutical pollution is a growing global environmental concern, and experimental studies often test concentrations that are much higher than those typically reported in real-world aquatic systems. A major practical reason for this mismatch is that environmental occurrence data are large, fragmented, inconsistently indexed, and time-consuming to clean before they can be used for study design.
 
-PollutionScopeR was built to reduce that friction. It provides a simple interface for searching a harmonized occurrence dataset, summarizing observed concentrations, visualizing their distribution, and translating those observations into candidate dose series for laboratory studies. The app is intended as a decision-support tool that helps researchers justify exposure concentrations with reference to measured environmental data.
+DrugPollutR was built to reduce that friction. It provides a simple interface for searching a harmonized occurrence dataset, summarizing observed concentrations, visualizing their distribution, and translating those observations into candidate dose series for laboratory studies. The app is intended as a decision-support tool that helps researchers justify exposure concentrations with reference to measured environmental data.
 
 ## What The App Does
 
-PollutionScopeR is organized into two linked modules.
+DrugPollutR is organized into two linked modules.
 
 ### ChemicalExploreR
 
@@ -45,7 +45,7 @@ The current workflow uses only positive concentration values, requires enough da
 
 ## Data Foundation
 
-This database was compiled for Martin et al (2025) Environ. Sci. Technol. Lett. 2025, 12, 10, 1308-1313 (https://doi.org/10.1021/acs.estlett.5c00665). It is based on a filtered synthesis of three publicly available datasets: (1) the NORMAN EMPODAT database for chemical occurrence (accessed 18/03/2025), (2) the Umweltbundesamt Pharmaceuticals in the Environment database (PHARMS-UBA; accessed 19/12/2024), and (3) Wilkinson et al. (2022) Pharmaceutical Pollution of the World's Rivers database. Data were restricted to entries reported in mass per volume of water (e.g., µg/L) and relevant to surface water and wastewater matrices (for details of the filtering process, please refer to Martin et al. (2025)
+This database was compiled for Martin et al (2025) Environ. Sci. Technol. Lett. 2025, 12, 10, 1308-1313 (https://doi.org/10.1021/acs.estlett.5c00665). It is based on a filtered synthesis of three publicly available datasets: (1) the NORMAN EMPODAT database for chemical occurrence (accessed 18/03/2025), (2) the Umweltbundesamt Pharmaceuticals in the Environment database (PHARMS-UBA; accessed 19/12/2024), and (3) Wilkinson et al. (2022) Pharmaceutical Pollution of the World's Rivers database. Data were restricted to entries reported in mass per volume of water (e.g., µg/L) and relevant to surface water and wastewater matrices (for details of the filtering process, please refer to Martin et al. (2025))
 
 In the app, the processed datasets are stored locally as:
 
@@ -95,7 +95,7 @@ Or open `app.R` in RStudio and run the app.
 
 ## Intended Use And Scope
 
-PollutionScopeR is designed to support experimental planning, not to replace researcher judgment. Users may still decide to test concentrations above currently observed environmental levels, include hotspot scenarios, or add positive controls for specific experimental aims. The app is best used as a transparent starting point for environmentally informed study design.
+DrugPollutR is designed to support experimental planning, not to replace researcher judgment. Users may still decide to test concentrations above currently observed environmental levels, include hotspot scenarios, or add positive controls for specific experimental aims. The app is best used as a transparent starting point for environmentally informed study design.
 
 ## Citation
 
@@ -106,6 +106,3 @@ If you use the app or its compiled data in research outputs, please cite the ass
 - PHARMS-UBA
 - Wilkinson et al. (2022). *Pharmaceutical Pollution of the World's Rivers*. Proceedings of the National Academy of Sciences. [https://doi.org/10.1073/pnas.2113947119](https://doi.org/10.1073/pnas.2113947119)
 
-## Acknowledgement
-
-This README was drafted from the app source code and the manuscript background in `sandpit/PollutionScopeR_submit.docx`, then condensed for repository use.
